@@ -1,6 +1,6 @@
 {
   "name": "rn-app-intro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "rn-app-intro is a react native plugin implementing a parallax effect welcome page using base on react-native-swiper , similar to the one found in Google's app like Sheet, Drive, Docs...",
   "main": "AppIntro.js",
   "scripts": {
