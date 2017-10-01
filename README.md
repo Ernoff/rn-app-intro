@@ -1,9 +1,9 @@
-# react-native-app-intro
-react-native-app-intro is a react native component implementing a parallax effect welcome page using base on [react-native-swiper](https://github.com/leecade/react-native-swiper) , similar to the one found in Google's app like Sheet, Drive, Docs...
+# rn-app-intro
+rn-app-intro is a react native component implementing a parallax effect welcome page using base on [react-native-swiper](https://github.com/leecade/react-native-swiper) , similar to the one found in Google's app like Sheet, Drive, Docs...
 
-# react-native-app-intro Screen Capture
+# rn-app-intro Screen Capture
 
-[Example code](https://github.com/FuYaoDe/react-native-app-intro/tree/master/Example)
+[Example code](https://github.com/FuYaoDe/rn-app-intro/tree/master/Example)
 
 ### Support ios、android
 <img src="http://i.giphy.com/3o6ozjLoOnYTXfzJgQ.gif">
@@ -14,7 +14,7 @@ react-native-app-intro is a react native component implementing a parallax effec
 ### Installation
 
 ```bash
-$ npm i react-native-app-intro --save
+$ npm i rn-app-intro --save
 ```
 
 ### Basic Usage
@@ -27,7 +27,7 @@ You can use pageArray quick generation your app intro with parallax effect. With
 ```javascript
 import React, { Component } from 'react';
 import { AppRegistry, Alert } from 'react-native';
-import AppIntro from 'react-native-app-intro';
+import AppIntro from 'rn-app-intro';
 
 class Example extends Component {
   onSkipBtnHandle = (index) => {
@@ -97,7 +97,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import AppIntro from 'react-native-app-intro';
+import AppIntro from 'rn-app-intro';
 
 const styles = StyleSheet.create({
   slide: {
@@ -184,3 +184,6 @@ And in Android, image inside view component, view need width、height.
 | Prop  | PropType | Default Value | Description           |
 |-------|----------|---------------|-----------------------|
 | level | number   |               | parallax effect level |
+
+## **This is a fork of rn-app-intro. Kudos to FuYaoDe for the heavy lifting**
+## **It has however been improved to support React 16.^** 
