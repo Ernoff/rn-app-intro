@@ -1,34 +1,34 @@
 {
-  "name": "rn-app-intro",
-  "version": "0.0.4",
-  "description": "rn-app-intro is a react native plugin implementing a parallax effect welcome page using base on react-native-swiper , similar to the one found in Google's app like Sheet, Drive, Docs...",
-  "main": "AppIntro.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ernoff/rn-app-intro.git"
-  },
-  "keywords": [
-    "swiper",
-    "ProductTour",
-    "App",
-    "Intro",
-    "ios",
-    "android",
-    "react-component",
-    "react-native"
-  ],
-  "author": "Ernest Offiong",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ernoff/rn-app-intro/issues"
-  },
-  "homepage": "https://github.com/ernoff/rn-app-intro#readme",
-  "dependencies": {
-    "assign-deep": "^0.4.5",
-    "react-native-swiper": "git+https://github.com/FuYaoDe/react-native-swiper.git",
-    "prop-types": "^15.5.10"
-  }
+    "name": "rn-app-intro",
+    "version": "0.0.4",
+    "description": "rn-app-intro is a react native plugin implementing a parallax effect welcome page using base on react-native-swiper , similar to the one found in Google's app like Sheet, Drive, Docs...",
+    "main": "AppIntro.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Ernoff/rn-app-intro.git"
+    },
+    "keywords": [
+        "swiper",
+        "ProductTour",
+        "App",
+        "Intro",
+        "ios",
+        "android",
+        "react-component",
+        "react-native"
+    ],
+    "author": "Ernest Offiong",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ernoff/rn-app-intro/issues"
+    },
+    "homepage": "https://github.com/ernoff/rn-app-intro#readme",
+    "dependencies": {
+        "assign-deep": "^0.4.5",
+        "react-native-swiper": "git+https://github.com/leecade/react-native-swiper.git",
+        "prop-types": "^15.5.10"
+    }
 }
