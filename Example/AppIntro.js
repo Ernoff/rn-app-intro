@@ -200,16 +200,14 @@ export default class AppIntro extends Component {
             isDoneBtnShow = false;
             isSkipBtnShow = true;
         }
-        return ( <
-            View style = {
+        return ( <View style = {
                 [this.styles.paginationContainer] } > {
-                this.props.showSkipButton ? < SkipButton {...this.props } {...this.state }
+                this.props.showSkipButton ? <SkipButton {...this.props } {...this.state }
                 isSkipBtnShow = { isSkipBtnShow }
                 styles = { this.styles }
                 onSkipBtnClick = {
                     () => this.props.onSkipBtnClick(index) }
-                /> : <
-                View style = { this.styles.btnContainer }
+                /> : <View style = { this.styles.btnContainer }
                 />
             } {
                 this.props.showDots && RenderDots(index, total, {
@@ -217,16 +215,14 @@ export default class AppIntro extends Component {
                     styles: this.styles
                 })
             } {
-                this.props.showDoneButton ? < DoneButton {...this.props } {...this.state }
+                this.props.showDoneButton ? <DoneButton {...this.props } {...this.state }
                 isDoneBtnShow = { isDoneBtnShow }
                 styles = { this.styles }
                 onNextBtnClick = { this.onNextBtnClick.bind(this, context) }
                 onDoneBtnClick = { this.props.onDoneBtnClick }
-                /> : <
-                View style = { this.styles.btnContainer }
+                /> : <View style = { this.styles.btnContainer }
                 />
-            } <
-            /View>
+            } </View>
         );
     }
 
@@ -243,33 +239,24 @@ export default class AppIntro extends Component {
         const AnimatedStyle2 = this.getTransform(index, 0, level);
         const AnimatedStyle3 = this.getTransform(index, 15, level);
         const imgSource = (typeof img === 'string') ? { uri: img } : img;
-        const pageView = ( <
-            View style = {
+        const pageView = ( <View style = {
                 [this.styles.slide, { backgroundColor }] }
             showsPagination = { false }
             key = { index } >
-            <
-            Animated.View style = {
+            <Animated.View style = {
                 [this.styles.header, ...AnimatedStyle1.transform] } >
-            <
-            Image style = { imgStyle }
+            <Image style = { imgStyle }
             source = { imgSource }
-            /> <
-            /Animated.View> <
-            View style = { this.styles.info } >
-            <
-            Animated.View style = { AnimatedStyle2.transform } >
-            <
-            Text style = {
-                [this.styles.title, { color: fontColor }] } > { title } < /Text> <
-            /Animated.View> <
-            Animated.View style = { AnimatedStyle3.transform } >
-            <
-            Text style = {
-                [this.styles.description, { color: fontColor }] } > { description } < /Text> <
-            /Animated.View> <
-            /View> <
-            /View>
+            /> </Animated.View> 
+            <View style = { this.styles.info } >
+            <Animated.View style = { AnimatedStyle2.transform } >
+            <Text style = {
+                [this.styles.title, { color: fontColor }] } > { title } </Text> </Animated.View> 
+            <Animated.View style = { AnimatedStyle3.transform } >
+            <Text style = {
+                [this.styles.description, { color: fontColor }] } > { description } </Text> 
+            </Animated.View> 
+            </View> </View>
         );
         return pageView;
     }
@@ -284,17 +271,16 @@ export default class AppIntro extends Component {
         }
         let animatedChild = children;
         if (level !== 0) {
-            animatedChild = ( <
-                Animated.View key = { index }
+            animatedChild = ( 
+                <Animated.View key = { index }
                 style = {
-                    [children.props.style, transform] } > { nodes } <
-                /Animated.View>
+                    [children.props.style, transform] } > { nodes } 
+            </Animated.View>
             );
         } else {
-            animatedChild = ( <
-                View key = { index }
-                style = { children.props.style } > { nodes } <
-                /View>
+            animatedChild = ( 
+                <View key = { index }
+                style = { children.props.style } > { nodes } </View>
             );
         }
         return animatedChild;
@@ -329,10 +315,10 @@ export default class AppIntro extends Component {
             } else {
                 androidPages = childrens.map((children, i) => {
                         const { transform } = this.getTransform(i, -windowsWidth / 3 * 2, 1);
-                        pages.push( < View key = { i }
+                        pages.push( <View key = { i }
                             />);
-                            return ( <
-                                Animated.View key = { i }
+                            return ( 
+                                <Animated.View key = { i }
                                 style = {
                                     [{
                                         position: 'absolute',
@@ -343,8 +329,8 @@ export default class AppIntro extends Component {
                                         ...transform[0],
                                     }]
                                 } >
-                                { this.renderChild(children, i, i) } <
-                                /Animated.View>
+                                { this.renderChild(children, i, i) } 
+                                </Animated.View>
                             );
                         });
                 }
@@ -354,9 +340,9 @@ export default class AppIntro extends Component {
                 StatusBar.setBackgroundColor(this.shadeStatusBarColor(this.props.pageArray[0].backgroundColor, -0.3), false);
             }
 
-            return ( <
-                View > { androidPages } <
-                Swiper loop = { false }
+            return ( 
+                <View > { androidPages } 
+                <Swiper loop = { false }
                 index = { this.props.defaultIndex }
                 renderPagination = { this.renderPagination }
                 onMomentumScrollEnd = {
@@ -373,9 +359,9 @@ export default class AppIntro extends Component {
                         [{ x: this.state.parallax }]
                     )
                 } >
-                { pages } <
-                /Swiper> <
-                /View>
+                { pages } 
+                </Swiper> 
+                </View>
             );
         }
     }
