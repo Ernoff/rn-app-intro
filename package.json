@@ -28,7 +28,7 @@
     "homepage": "https://github.com/ernoff/rn-app-intro#readme",
     "dependencies": {
         "assign-deep": "^0.4.5",
-        "react-native-swiper": "git+https://github.com/leecade/react-native-swiper.git",
+        "react-native-swiper": "1.5.13",
         "prop-types": "^15.5.10"
     }
 }
